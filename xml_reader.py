@@ -17,7 +17,7 @@ print(f"IP: {router['ip']}")
 if 'interfaces' in router:
  print("Interfaces:")
  for iface in router['interfaces']['interface']:
- print(f" - {iface['@name']}: {iface['ip']}")
+    print(f" - {iface['@name']}: {iface['ip']}")
 print("-" * 50)
 # Access switch
 switch = data['network']['switch']
@@ -27,4 +27,4 @@ print(f"IP: {switch['ip']}")
 if 'vlans' in switch:
  print("VLANs:")
  for vlan in switch['vlans']['vlan']:
- print(f" - VLAN {vlan['@id']}: {vlan['#text']}")
+    print(f" - VLAN {vlan['@id']}: {vlan['#text']}")

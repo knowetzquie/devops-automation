@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<network>
+ <router name="router-01">
+ <ip>192.168.1.1</ip>
+ <interfaces>
+ <interface name="eth0">
+ <ip>10.0.0.1</ip>
+ <mask>255.255.255.0</mask>
+ </interface>
+ <interface name="eth1">
+ <ip>10.0.1.1</ip>
+ <mask>255.255.255.0</mask>
+ </interface>
+ </interfaces>
+ </router>
+ <switch name="switch-01">
+ <ip>192.168.1.2</ip>
+ <vlans>
+ <vlan id="10">Management</vlan>
+ <vlan id="20">Servers</vlan>
+ <vlan id="30">Users</vlan>
+ </vlans>
+ </switch>
+</network>

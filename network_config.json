@@ -1,0 +1,42 @@
+{
+    "network": {
+        "router": {
+            "@name": "router-01",
+            "ip": "192.168.1.1",
+            "interfaces": {
+                "interface": [
+                    {
+                        "@name": "eth0",
+                        "ip": "10.0.0.1",
+                        "mask": "255.255.255.0"
+                    },
+                    {
+                        "@name": "eth1",
+                        "ip": "10.0.1.1",
+                        "mask": "255.255.255.0"
+                    }
+                ]
+            }
+        },
+        "switch": {
+            "@name": "switch-01",
+            "ip": "192.168.1.2",
+            "vlans": {
+                "vlan": [
+                    {
+                        "@id": "10",
+                        "#text": "Management"
+                    },
+                    {
+                        "@id": "20",
+                        "#text": "Servers"
+                    },
+                    {
+                        "@id": "30",
+                        "#text": "Users"
+                    }
+                ]
+            }
+        }
+    }
+}

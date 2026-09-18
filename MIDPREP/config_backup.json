@@ -1,0 +1,19 @@
+{
+    "devices": [
+        {
+            "name": "router-01",
+            "ip": "192.168.1.1",
+            "status": "active"
+        },
+        {
+            "name": "switch-01",
+            "ip": "192.168.1.2",
+            "status": "active"
+        },
+        {
+            "name": "firewall-01",
+            "ip": "192.168.1.3",
+            "status": "maintenance"
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "name": "server-01",
+    "type": "server",
+    "ip": "192.168.1.10",
+    "status": "active",
+    "interfaces": [
+        "eth0",
+        "eth1"
+    ],
+    "specs": {
+        "cpu": "Intel Xeon",
+        "ram": "32GB",
+        "storage": "1TB SSD"
+    }
+}

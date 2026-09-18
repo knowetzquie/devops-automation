@@ -1,0 +1,27 @@
+network:
+  routers:
+    - name: router-01
+      ip: 192.168.1.1
+      os: IOS
+      version: 15.2
+    - name: router-02
+      ip: 192.168.1.2
+      os: IOS
+      version: 15.4
+  switches:
+    - name: switch-01
+      ip: 192.168.1.10
+      os: IOS
+      vlans:
+        - id: 10
+          name: Management
+        - id: 20
+          name: Servers
+  firewalls:
+    - name: fw-01
+      ip: 192.168.1.20
+      os: Palo Alto
+      zones:
+        - trust
+        - untrust
+        - dmz

@@ -1,0 +1,25 @@
+{
+ "devices": [
+ {
+ "name": "router-01",
+ "type": "router",
+ "ip": "192.168.1.1",
+ "status": "active",
+ "interfaces": ["eth0", "eth1", "eth2"]
+ },
+ {
+ "name": "switch-01",
+ "type": "switch",
+ "ip": "192.168.1.2",
+ "status": "active",
+ "interfaces": ["eth0", "eth1", "eth2", "eth3"]
+ },
+ {
+ "name": "firewall-01",
+ "type": "firewall",
+ "ip": "192.168.1.3",
+ "status": "maintenance",
+ "interfaces": ["eth0", "eth1"]
+ }
+ ]
+}
